@@ -8,7 +8,7 @@
   <style>
     :root{--accent:#0b4d91;--accent2:#f39c12;--muted:#666}
     *{box-sizing:border-box}
-    body{font-family:Tahoma, system-ui, Arial, sans-serif;margin:0;background:#fff;color:#111}
+    body{font-family:Tahoma, system-ui, Arial, sans-serif;margin:0;background:linear-gradient(135deg,#ffb74d,#ff8a65,#ba68c8,#64b5f6);color:#111;background-size:400% 400%;animation:bgmove 12s ease infinite;}@keyframes bgmove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}
     header{background:#f8f8f8;border-bottom:4px solid var(--accent);padding:18px 20px}
     .container{max-width:920px;margin:20px auto;padding:0 16px}
     nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
@@ -51,7 +51,7 @@
       <a href="#buffering" data-target="buffering">On Buffering</a>
       <a href="#unlimited" data-target="unlimited">Unlimited Volume</a>
       <a href="#packages" data-target="packages">Pure Internet Packages</a>
-      <a href="#contact" data-target="contact">رابطہ</a>
+      <a href="#contact" data-target="contact" style="background:#e53935;color:#fff;font-weight:700;border:2px solid #b71c1c;">📞 Contact</a>
     </nav><!-- Home page -->
 <main id="home" class="page active">
   <div class="card">

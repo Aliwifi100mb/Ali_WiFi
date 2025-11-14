@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SmartLink — معلوماتی ویب سائٹ</title>
+  <style>
+    :root{--accent:#0b4d91;--accent2:#f39c12;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Tahoma, system-ui, Arial, sans-serif;margin:0;background:#fff;color:#111}
+    header{background:#f8f8f8;border-bottom:4px solid var(--accent);padding:18px 20px}
+    .container{max-width:920px;margin:20px auto;padding:0 16px}
+    nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+    nav a{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:#eee;color:#111}
+    nav a.active{background:var(--accent);color:#fff}
+    .card{border:1px solid #eee;border-radius:10px;padding:20px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,0.03)}
+    h1,h2{margin:6px 0}
+    p{margin:8px 0;color:var(--muted)}
+    .feature{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:8px;margin:10px 0}
+    .feature .label{font-weight:700}
+    .feature.blue{background:#0b3b6a;color:#fff}
+    .feature.orange{background:#f39c12;color:#fff}
+    .feature.yellow{background:#d4a017;color:#111}
+    .feature.green{background:#0f9d58;color:#fff}
+    .feature.navy{background:#14213d;color:#fff}
+    .banner{background:#c62828;color:#fff;padding:10px;border-radius:8px;text-align:center;font-weight:700;margin:16px 0}
+    .speeds{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+    .speed{padding:10px;border-radius:6px;text-align:center;background:#0b3b6a;color:#fff;font-weight:700}
+    .speed.orange{background:#ef8b22}
+    .center{display:flex;gap:8px;align-items:center;justify-content:center}
+    footer{background:#e53935;color:#fff;padding:12px 16px;text-align:center;margin-top:20px;border-top:4px solid #b71c1c}
+    /* "pages" visibility */
+    .page{display:none}
+    .page.active{display:block}
+    @media (max-width:600px){nav{gap:6px} .feature{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SMARTLINK (PVT) LTD. — Internet Service Provider</h1>
+      <p style="margin-top:4px;color:var(--muted)">خالص انٹرنیٹ پیکجز — نیچے موجود ہر آئٹم کا الگ صفحہ ہے</p>
+    </div>
+  </header>  <div class="container">
+    <nav aria-label="صفحہ نیویگیشن">
+      <a href="#home" data-target="home" class="active">ہوم</a>
+      <a href="#equal" data-target="equal">Equal Upload & Download</a>
+      <a href="#gaming" data-target="gaming">Ultimate Game Experience</a>
+      <a href="#lagging" data-target="lagging">On Lagging</a>
+      <a href="#buffering" data-target="buffering">On Buffering</a>
+      <a href="#unlimited" data-target="unlimited">Unlimited Volume</a>
+      <a href="#packages" data-target="packages">Pure Internet Packages</a>
+      <a href="#contact" data-target="contact">رابطہ</a>
+    </nav><!-- Home page -->
+<main id="home" class="page active">
+  <div class="card">
+    <h2>خوش آمدید</h2>
+    <p>یہ ویب سائٹ SMARTLINK (PVT) LTD. کے پیکجز اور خصوصیات کا تعارفی صفحہ ہے۔ اوپر نیویگیشن میں سے ہر آئٹم کھول کر متعلقہ معلومات دیکھیں۔</p>
+  </div>
+</main>
+
+<!-- Equal Upload & Download -->
+<main id="equal" class="page">
+  <div class="card">
+    <h2>Equal Upload & Download</h2>
+    <p class="muted">اپ لوڈ اور ڈاؤن لوڈ کی رفتار برابر</p>
+    <div class="feature blue"><div class="label">EQUAL UPLOAD & DOWNLOAD</div><div>برابر رفتار</div></div>
+  </div>
+</main>
+
+<!-- Gaming -->
+<main id="gaming" class="page">
+  <div class="card">
+    <h2>Ultimate Game Experience</h2>
+    <p>گیم کھلانے والوں کے لیے کم تاخیر اور بہتر تجربہ۔</p>
+    <div class="feature orange"><div class="label">ULTIMATE GAME EXPERIENCE</div><div>گیم پلے بہتر</div></div>
+  </div>
+</main>
+
+<!-- Lagging -->
+<main id="lagging" class="page">
+  <div class="card">
+    <h2>On Lagging</h2>
+    <p>اگر آپ کو لیگنگ آرہی ہے تو ہمارا کنیکٹ تلاش کریں — حل شدہ سیٹنگز دستیاب ہیں۔</p>
+    <div class="feature yellow"><div class="label">ON LAGGING</div><div>لیگ کم کریں</div></div>
+  </div>
+</main>
+
+<!-- Buffering -->
+<main id="buffering" class="page">
+  <div class="card">
+    <h2>On Buffering</h2>
+    <p>Buffering کے مسائل کے لیے بہتر پیکجز اور کنفیگریشنز۔</p>
+    <div class="feature green"><div class="label">ON BUFFERING</div><div>بفرنگ کم کریں</div></div>
+  </div>
+</main>
+
+<!-- Unlimited Volume -->
+<main id="unlimited" class="page">
+  <div class="card">
+    <h2>Unlimited Volume</h2>
+    <p>بے حد ڈیٹا والا اختیار — پابندی کے بغیر استعمال کریں۔</p>
+    <div class="feature navy"><div class="label">UNLIMITED VOLUME</div><div>لامحدود ڈیٹا</div></div>
+  </div>
+</main>
+
+<!-- Packages -->
+<main id="packages" class="page">
+  <div class="card">
+    <h2>Pure Internet Packages</h2>
+    <p>ہماری عام دستیاب رفتاریں درج ذیل ہیں:</p>
+    <div class="banner">PURE INTERNET PACKAGES</div>
+    <div class="speeds">
+      <div class="speed">10mbps</div>
+      <div class="speed">15mbps</div>
+      <div class="speed">24mbps</div>
+      <div class="speed orange">30mbps</div>
+      <div class="speed orange">45mbps</div>
+      <div class="speed orange">75mbps</div>
+      <div class="speed" style="grid-column:span 2;background:#c62828;">100mbps</div>
+    </div>
+    <p style="margin-top:12px;color:var(--muted)">مندرجہ بالا پیکجز کے لیے رابطہ کریں۔</p>
+  </div>
+</main>
+
+<!-- Contact -->
+<main id="contact" class="page">
+  <div class="card">
+    <h2>Contact / رابطہ</h2>
+    <p>مزید معلومات اور کنٹریکٹ کے لیے نیچے نمبر استعمال کریں:</p>
+    <div class="center" style="margin-top:12px">
+      <div style="text-align:center">
+        <div style="font-weight:800">Contect:</div>
+        <div style="margin-top:6px">0305-9892275</div>
+        <div style="margin-top:6px">0306-1688377</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © SMARTLINK — All rights reserved
+</footer>
+
+  </div>  <script>
+    // Simple hash-based "multi-page" router
+    const links = document.querySelectorAll('nav a');
+    const pages = document.querySelectorAll('.page');
+    function showPage(id){
+      pages.forEach(p=>p.classList.remove('active'));
+      const el = document.getElementById(id);
+      if(el) el.classList.add('active');
+      links.forEach(a=>a.classList.toggle('active', a.getAttribute('data-target')===id));
+    }
+    function handleHash(){
+      const hash = location.hash.replace('#','') || 'home';
+      showPage(hash);
+    }
+    window.addEventListener('hashchange', handleHash);
+    // init
+    handleHash();
+    // enable nav clicks to update hash
+    links.forEach(a=>a.addEventListener('click', e=>{
+      // allow default anchor behavior (hash change)
+    }));
+  </script></body>
+</html>
